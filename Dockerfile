@@ -8,6 +8,6 @@ RUN npm i && \
 # Stage 2 - the production environment
 FROM nginx:1.15.2-alpine
 COPY nginx.conf /etc/nginx/nginx.conf
-COPY --from=react-build /app/build /usr/share/nginx/html
+COPY --from=react-build /app/build /var/www
 EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]

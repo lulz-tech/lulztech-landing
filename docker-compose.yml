@@ -5,7 +5,12 @@ services:
       image: alm2/memster-landing
       container_name: memster-landing
       labels:
-      - "traefik.port=3000"
+      - "traefik.port=80"
       - "traefik.backend=memster-landing"
       - "traefik.frontend.rule=Host:memster.gq"
       - "traefik.frontend.entryPoints=http,https"
+
+networks:
+   default:
+      external:
+         name: traefik
