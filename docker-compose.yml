@@ -1,0 +1,11 @@
+version: '3.5'
+
+services:
+   memster-landing:
+      image: alm2/memster-landing
+      container_name: memster-landing
+      labels:
+      - "traefik.port=3000"
+      - "traefik.backend=memster-landing"
+      - "traefik.frontend.rule=Host:memster.gq"
+      - "traefik.frontend.entryPoints=http,https"
