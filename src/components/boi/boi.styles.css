@@ -9,7 +9,6 @@
 #boi-background .boi {
     position: absolute;
     left: calc(100vw + 178px);
-    ;
     width: 178px;
 
     /* animation: boi-comming-out 3s forwards ease-in-out, boi-movement 0.4s 1s ease-in-out forwards; */
@@ -18,7 +17,7 @@
 
 #boi-background .cat {
     position: absolute;
-    top: 5vh;
+    top: 4vh;
     left: -290px;
     width: 290px;
 
