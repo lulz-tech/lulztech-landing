@@ -1,9 +1,36 @@
 .App {
     text-align: center;
+
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+
+.background {
+    background-image: url('/memster.gif');
+    background-size: 100%;
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+    z-index: -1;
+    opacity: 0.2;
+
 }
 
 .App-title {
-    font-size: 1.5em;
+    font-size: 2.5em;
 }
 
 .App-intro {
