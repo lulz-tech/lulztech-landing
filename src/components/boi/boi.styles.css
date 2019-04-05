@@ -1,0 +1,72 @@
+#boi-background {
+    position: absolute;
+    top: 28px;
+    width: 100vw;
+
+    z-index: 4;
+}
+
+#boi-background .boi {
+    position: absolute;
+    left: calc(100vw + 178px);
+    ;
+    width: 178px;
+
+    /* animation: boi-comming-out 3s forwards ease-in-out, boi-movement 0.4s 1s ease-in-out forwards; */
+    animation: boi-comming-out 3s 4s ease-in-out forwards, boi-movement 2s 7s infinite ease-in-out forwards;
+}
+
+#boi-background .cat {
+    position: absolute;
+    top: 5vh;
+    left: -290px;
+    width: 290px;
+
+    animation: cat-comming-out 3s 4s forwards ease-in-out, cat-movement 2s 7s infinite ease-in-out forwards;
+}
+
+@keyframes boi-comming-out {
+    from {
+        left: calc(100vw + 178px);
+    }
+
+    to {
+        left: 0;
+    }
+}
+
+@keyframes cat-comming-out {
+    from {
+        left: -290px;
+    }
+
+    to {
+        left: 0;
+    }
+}
+
+@keyframes boi-movement {
+
+    0%,
+    100% {
+        left: 0;
+    }
+
+    50% {
+        left: 50px;
+    }
+
+}
+
+@keyframes cat-movement {
+
+    0%,
+    100% {
+        left: 0;
+    }
+
+    50% {
+        left: -10px;
+    }
+
+}
