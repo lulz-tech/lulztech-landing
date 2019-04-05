@@ -12,7 +12,7 @@ class App extends React.Component {
             <h1 className="App-title">Memster</h1>
           </header>
           <p className="App-intro">
-            <p>💦 Давай, пробуй 💦</p>
+              <p><span className="emoji-animation">💦</span> Давай, пробуй <span className="emoji-animation">💦</span></p>
             <a target="__blank" href="https://t.me/memser_bot">Тыц</a>
           </p>
         </div>
