@@ -8,9 +8,12 @@
     ]
   },
   "rules": {
-    "no-empty-interface": false,
     "jsx-self-close": false,
+    "member-access": false,
+    "member-ordering": false,
+    "no-console": false,
     "no-debugger": false,
-    "member-ordering": false
+    "no-empty-interface": false,
+    "quotemark": true
   }
 }

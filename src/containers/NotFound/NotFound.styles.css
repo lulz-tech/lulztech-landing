@@ -1,0 +1,6 @@
+.not-found__link {
+    color: #08c9ff;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: 'Comfortaa', 'Roboto', sans-serif;
+}

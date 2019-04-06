@@ -1,24 +1,31 @@
-import * as React from 'react';
+import * as React from "react";
 
-import { AppIntro } from './components/app-intro/app-intro';
-import { AppTitle } from './components/app-title/app-title';
-import { Boi } from './components/boi/boi';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
-import './styles/App.css';
+import { AppWrapper } from "./containers/AppWrapper/AppWrapper";
+
+import { Home } from "./containers/Home/Home";
+
+import { Alm } from "./containers/Alm/Alm";
+import { UncleFedor } from "./containers/UncleFedor/UncleFedor";
+
+import { NotFound } from "./containers/NotFound/NotFound";
 
 class App extends React.Component {
   public render() {
     return (
-      <div className="wrapper">
-        <div className="background" />
 
-        <Boi />
+      <AppWrapper>
+        <Router>
+          <Switch>
+            <Route exact={true} path="/" component={Home} />
+            <Route exact={true} path="/alm" component={Alm} />
+            <Route exact={true} path="/uncleFedor" component={UncleFedor} />
 
-        <div className="App">
-          <AppTitle />
-          <AppIntro />
-        </div>
-      </div>
+            <Route component={NotFound} />
+          </Switch>
+        </Router>
+      </AppWrapper>
     );
   }
 }

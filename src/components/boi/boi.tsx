@@ -6,25 +6,41 @@ import house from "../../assets/images/house.png";
 import man from "../../assets/images/man.png";
 import minecraft from "../../assets/images/minecraft.png";
 
-
-import { randomBetween } from 'src/utils/utils';
+import { randomBetween } from "src/utils/utils";
 
 import "./boi.styles.css";
+
+enum Pic {
+    cat = "cat",
+    house = "house",
+    man = "man",
+    minecraft = "minecraft"
+}
+
+const pics: Array<{ picName: Pic, pic: string }> = [
+    { picName: Pic.cat, pic: cat },
+    { picName: Pic.house, pic: house },
+    { picName: Pic.man, pic: man },
+    { picName: Pic.minecraft, pic: minecraft },
+]
+
+interface IBoiProps {
+    defaultPic?: Pic;
+}
 
 interface IBoiState {
     currentPic: string;
 }
 
-export class Boi extends React.Component<{}, IBoiState> {
-    constructor(props: {}) {
+export class Boi extends React.Component<IBoiProps, IBoiState> {
+    constructor(props: IBoiProps) {
         super(props);
 
-        this.initRandomPic();
+        this.initRandomPic(this.props.defaultPic);
     }
 
-    private initRandomPic = () => {
-        const pics = [cat, house, man, minecraft];
-        const currentPic = pics[randomBetween(0, pics.length - 1)];
+    private initRandomPic = (defaultPic?: Pic) => {
+        const currentPic = defaultPic ? pics[defaultPic].pic : pics[randomBetween(0, pics.length)].pic;
 
         this.state = {
             currentPic

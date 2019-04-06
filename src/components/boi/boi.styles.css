@@ -11,8 +11,7 @@
     left: calc(100vw + 178px);
     width: 178px;
 
-    /* animation: boi-comming-out 3s forwards ease-in-out, boi-movement 0.4s 1s ease-in-out forwards; */
-    animation: boi-comming-out 3s 4s ease-in-out forwards, boi-movement 2s 7s infinite ease-in-out forwards;
+    animation: boi-comming-out 2s 1s ease-in-out forwards, boi-movement 2s 3s infinite ease-in-out forwards;
 }
 
 #boi-background .cat {
@@ -21,7 +20,7 @@
     left: -290px;
     width: 290px;
 
-    animation: cat-comming-out 3s 4s forwards ease-in-out, cat-movement 2s 7s infinite ease-in-out forwards;
+    animation: cat-comming-out 2s 1s forwards ease-in-out, cat-movement 2s 3s infinite ease-in-out forwards;
 }
 
 @keyframes boi-comming-out {

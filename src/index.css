@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa:200,300,400|Roboto:200,300,400&subset=cyrillic');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+
+    user-select: none;
+}
