@@ -4,38 +4,31 @@ import boi from "../../assets/images/boiiiii.png";
 import cat from "../../assets/images/cat.png";
 import house from "../../assets/images/house.png";
 import man from "../../assets/images/man.png";
+import minecraft from "../../assets/images/minecraft.png";
+
+
+import { randomBetween } from 'src/utils/utils';
 
 import "./boi.styles.css";
-interface IBoiProps { }
 
 interface IBoiState {
     currentPic: string;
 }
 
-export class Boi extends React.Component<IBoiProps, IBoiState> {
-    constructor(props: IBoiProps) {
+export class Boi extends React.Component<{}, IBoiState> {
+    constructor(props: {}) {
         super(props);
 
         this.initRandomPic();
     }
 
     private initRandomPic = () => {
-        const rand = Math.random();
-
-        let currentPic: string = "";
-
-        if (rand > 0 && rand < 0.4) {
-            currentPic = cat;
-        } else if (rand > 0.4 && rand < 0.8) {
-            currentPic = man;
-        } else if (rand > 0.8 && rand < 1) {
-            currentPic = house;
-        }
+        const pics = [cat, house, man, minecraft];
+        const currentPic = pics[randomBetween(0, pics.length - 1)];
 
         this.state = {
             currentPic
         };
-
     }
 
     public render() {
