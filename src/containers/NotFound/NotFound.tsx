@@ -2,8 +2,8 @@ import * as React from "react";
 
 import { Link } from "react-router-dom";
 
-import { AppTitle } from "src/components/app-title/app-title";
-import { Boi } from "src/components/boi/boi";
+import { AppTitle } from "../..//components/app-title/app-title";
+import { Boi } from "../../components/boi/boi";
 
 import "./NotFound.styles.css";
 

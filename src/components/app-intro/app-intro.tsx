@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import { randomBetween } from "src/utils/utils";
+import { randomBetween } from "../../utils/utils";
 import "./app-intro.styles.css";
 
 const aboutTexts = ["Давай, пробуй", "Не хочешь немного мемов?", "Илитные мемы от бота"];

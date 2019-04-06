@@ -6,7 +6,7 @@ import house from "../../assets/images/house.png";
 import man from "../../assets/images/man.png";
 import minecraft from "../../assets/images/minecraft.png";
 
-import { randomBetween } from "src/utils/utils";
+import { randomBetween } from "../../utils/utils";
 
 import "./boi.styles.css";
 

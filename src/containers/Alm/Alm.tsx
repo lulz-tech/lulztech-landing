@@ -1,7 +1,7 @@
 import * as React from "react";
 
-import { AppTitle } from "src/components/app-title/app-title";
-import { Boi } from "src/components/boi/boi";
+import { AppTitle } from "../../components/app-title/app-title";
+import { Boi } from "../../components/boi/boi";
 
 interface IAlmProps { }
 
