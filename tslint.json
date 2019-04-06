@@ -10,6 +10,7 @@
   "rules": {
     "no-empty-interface": false,
     "jsx-self-close": false,
-    "no-debugger": false
+    "no-debugger": false,
+    "member-ordering": false
   }
 }

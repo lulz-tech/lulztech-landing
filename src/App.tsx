@@ -1,6 +1,9 @@
 import * as React from 'react';
 
+import { AppIntro } from './components/app-intro/app-intro';
+import { AppTitle } from './components/app-title/app-title';
 import { Boi } from './components/boi/boi';
+
 import './styles/App.css';
 
 class App extends React.Component {
@@ -8,15 +11,12 @@ class App extends React.Component {
     return (
       <div className="wrapper">
         <div className="background" />
+
         <Boi />
+
         <div className="App">
-          <header className="App-header">
-            <h1 className="App-title">Memster</h1>
-          </header>
-          <p className="App-intro">
-            <p><span className="emoji-animation">💦</span> Давай, пробуй <span className="emoji-animation">💦</span></p>
-            <a target="__blank" href="https://t.me/memser_bot">Тыц</a>
-          </p>
+          <AppTitle />
+          <AppIntro />
         </div>
       </div>
     );

@@ -1,9 +1,3 @@
-@keyframes emoji-anim {
-    0% { font-size: 16px }
-    50% { font-size: 42px }
-    100% {font-size: 16px}
-}
-
 .App {
     text-align: center;
     font-family: 'Comfortaa', 'Roboto', sans-serif;
@@ -33,27 +27,4 @@
     right: 0;
     left: 0;
     z-index: -1;
-
 }
-
-.App-title {
-    font-weight: 200;
-    font-size: 4em;
-}
-
-.App-intro {
-    font-family: 'Roboto', sans-serif;
-    font-size: 2.2em;
-    font-weight: 200;
-}
-.App-intro .emoji-animation{
-    animation: emoji-anim 3s infinite ease-in-out;
-}
-.App-intro a{
-    color: #08c9ff;
-    cursor: pointer;
-    text-decoration: none;
-    font-family: 'Comfortaa', 'Roboto', sans-serif;
-}
-
-

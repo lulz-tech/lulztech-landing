@@ -1,0 +1,37 @@
+@keyframes emoji-anim {
+    0% {
+        font-size: 16px
+    }
+
+    50% {
+        font-size: 42px
+    }
+
+    100% {
+        font-size: 16px
+    }
+}
+
+
+.App-intro {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.2em;
+    font-weight: 200;
+}
+
+.App-intro a {
+    color: #08c9ff;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: 'Comfortaa', 'Roboto', sans-serif;
+}
+
+.App-intro .about::before {
+    content: '💦';
+    animation: emoji-anim 3s infinite ease-in-out;
+}
+
+.App-intro .about::after {
+    content: '💦';
+    animation: emoji-anim 3s infinite ease-in-out;
+}
