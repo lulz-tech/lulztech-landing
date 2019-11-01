@@ -8,7 +8,7 @@ import minecraft from "../../assets/images/minecraft.png";
 
 import { randomBetween } from "../../utils/utils";
 
-import "./boi.styles.css";
+import "./boi.styles.scss";
 
 enum Pic {
     cat = "cat",
@@ -51,8 +51,8 @@ export class Boi extends React.Component<IBoiProps, IBoiState> {
         const { currentPic } = this.state;
         return (
             <div id="boi-background">
-                <img className="cat" src={currentPic}></img>
-                <img className="boi" src={boi}></img>
+                <img className="cat" alt="cat" src={currentPic}></img>
+                <img className="boi" alt="boi" src={boi}></img>
             </div>
         );
     }
