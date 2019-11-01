@@ -1,14 +1,14 @@
-version: '3.5'
+version: "3.5"
 
 services:
-   memster-landing:
-      image: alm2/memster-landing
-      container_name: memster-landing
+   lulztech-landing:
+      image: alm2/lulztech-landing
+      container_name: lulztech-landing
       labels:
-      - "traefik.port=80"
-      - "traefik.backend=memster-landing"
-      - "traefik.frontend.rule=Host:memster.gq"
-      - "traefik.frontend.entryPoints=http,https"
+         - "traefik.port=80"
+         - "traefik.backend=lulztech-landing"
+         - "traefik.frontend.rule=Host:lulztech.gq"
+         - "traefik.frontend.entryPoints=http,https"
 
 networks:
    default:

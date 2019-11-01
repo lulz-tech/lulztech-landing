@@ -3,8 +3,8 @@
 ## Installation
 
 ```bash
-git clone https://github.com/AlexMubarakshin/memster-landing.git
-cd ./memster-landing
+git clone https://github.com/AlexMubarakshin/lulztech-landing.git
+cd ./lulztech-landing
 
 yarn i
 
