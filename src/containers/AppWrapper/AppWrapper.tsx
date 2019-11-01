@@ -1,19 +1,25 @@
 import * as React from "react";
+import Head from 'next/head';
 
-import YoutubeBackground from "react-youtube-background"
+import DynamicYoutubeBackground from "../../components/youtube-background";
 
-import "./AppWrapper.styles.css";
+import "./AppWrapper.styles.scss";
 
-interface IAppWrapperProps { }
+interface IAppWrapperProps {
+    title?: string
+}
 
-interface IAppWrapperState { }
+interface IAppWrapperState {
+    aspectRatio: string;
+}
 
 export class AppWrapper extends React.Component<IAppWrapperProps, IAppWrapperState> {
-    private aspectRatio: string;
 
-    constructor(props: IAppWrapperProps) {
-        super(props);
+    state: IAppWrapperState = {
+        aspectRatio: "16:9",
+    }
 
+    componentDidMount() {
         this.setAspectRatio();
     }
 
@@ -26,26 +32,32 @@ export class AppWrapper extends React.Component<IAppWrapperProps, IAppWrapperSta
             aspectRatio = `${window.outerWidth * aspectRatioNumber}:${window.outerHeight * aspectRatioNumber}`;
         }
 
-        this.aspectRatio = aspectRatio;
+        this.setState({ aspectRatio });
     }
 
-    public render() {
+    render() {
+        const { children, title } = this.props;
 
         return (
-            <div className="wrapper">
-                <YoutubeBackground
-                    videoId={"4UzZk6wCeQM"}
-                    overlay={"rgba(0,0,0,0.8)"}       // defaults -> null | e.g. "rgba(0,0,0,.4)"
-                    className={"background-video"}   // defaults -> null
-                    aspectRatio={this.aspectRatio}
-                // onReady={func}       // defaults -> null
-
-                >
-                    <div className="App">
-                        {this.props.children}
-                    </div>
-                </YoutubeBackground>
-            </div>
+            <>
+                <Head>
+                    <title>{title}</title>
+                    <meta charSet="utf-8" />
+                    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+                </Head>
+                <div className="wrapper">
+                    <DynamicYoutubeBackground
+                        videoId={"4UzZk6wCeQM"}
+                        overlay={"rgba(0,0,0,0.8)"}
+                        className={"background-video"}
+                        aspectRatio={this.state.aspectRatio}
+                    >
+                        <div className="App">
+                            {children}
+                        </div>
+                    </DynamicYoutubeBackground>
+                </div>
+            </>
         );
     }
 }

@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import "./app-title.styles.css";
+import "./app-title.styles.scss";
 
 interface IAppTitleProps {
     title?: string;

@@ -1,11 +1,9 @@
 import * as React from "react";
 
-import { Link } from "react-router-dom";
-
 import { AppTitle } from "../..//components/app-title/app-title";
 import { Boi } from "../../components/boi/boi";
 
-import "./NotFound.styles.css";
+import "./NotFound.styles.scss";
 
 export class NotFound extends React.PureComponent {
 
@@ -14,7 +12,7 @@ export class NotFound extends React.PureComponent {
             <>
                 <Boi />
                 <AppTitle title="Такой страницы нет 😵" />
-                <Link className="not-found__link" to="/">На главную</Link>
+                {/* <Link className="not-found__link" to="/">На главную</Link> */}
             </>
         );
     }

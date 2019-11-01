@@ -1,4 +1,4 @@
-# Memster landing
+# Lulz tech landing
 
 ## Installation
 
@@ -8,6 +8,11 @@ cd ./memster-landing
 
 yarn i
 
+# For run dev:
+yarn dev
+
+# For run production:
+yarn build
 yarn start
 
 # Visit localhost:3000
