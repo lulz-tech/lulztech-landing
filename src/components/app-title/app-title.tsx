@@ -6,12 +6,10 @@ interface IAppTitleProps {
     title?: string;
 }
 
-export class AppTitle extends React.PureComponent<IAppTitleProps> {
-    public render() {
-        return (
-            <header className="App-header">
-                <h1 className="App-title">{this.props.title || "Lulz tech"}</h1>
-            </header>
-        );
-    }
-}   
+const AppTitle: React.FC<IAppTitleProps> = ({ title }) => (
+    <header className="App-header">
+        <h1 className="App-title">{title || "💦 Lulz tech 💦"}</h1>
+    </header>
+);
+
+export default React.memo(AppTitle);

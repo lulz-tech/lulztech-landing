@@ -24,36 +24,30 @@ const pics: Array<{ picName: Pic, pic: string }> = [
     { picName: Pic.minecraft, pic: minecraft },
 ]
 
+const getPicture = (defaultPic?: Pic) => {
+    return defaultPic ? pics[defaultPic].pic : pics[randomBetween(0, pics.length)].pic;
+}
+
 interface IBoiProps {
     defaultPic?: Pic;
 }
 
-interface IBoiState {
-    currentPic: string;
+const Boi: React.FC<IBoiProps> = ({ defaultPic }) => {
+
+    const [currentPic, setPicture] = React.useState(getPicture(defaultPic));
+
+    React.useEffect(() => {
+        if (!defaultPic) {
+            setPicture(getPicture());
+        }
+    }, []);
+
+    return (
+        <div id="boi-background">
+            <img className="cat" alt="cat" src={currentPic}></img>
+            <img className="boi" alt="boi" src={boi}></img>
+        </div>
+    );
 }
 
-export class Boi extends React.Component<IBoiProps, IBoiState> {
-    constructor(props: IBoiProps) {
-        super(props);
-
-        this.initRandomPic(this.props.defaultPic);
-    }
-
-    private initRandomPic = (defaultPic?: Pic) => {
-        const currentPic = defaultPic ? pics[defaultPic].pic : pics[randomBetween(0, pics.length)].pic;
-
-        this.state = {
-            currentPic
-        };
-    }
-
-    public render() {
-        const { currentPic } = this.state;
-        return (
-            <div id="boi-background">
-                <img className="cat" alt="cat" src={currentPic}></img>
-                <img className="boi" alt="boi" src={boi}></img>
-            </div>
-        );
-    }
-}
+export default React.memo(Boi);

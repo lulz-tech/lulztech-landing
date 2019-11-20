@@ -3,6 +3,8 @@ import Head from 'next/head';
 
 import DynamicYoutubeBackground from "../../components/youtube-background";
 
+import Boi from "../../components/boi/boi";
+
 import "./AppWrapper.styles.scss";
 
 interface IAppWrapperProps {
@@ -46,6 +48,8 @@ export class AppWrapper extends React.Component<IAppWrapperProps, IAppWrapperSta
                     <meta name="viewport" content="initial-scale=1.0, width=device-width" />
                 </Head>
                 <div className="wrapper">
+                    <Boi />
+
                     <DynamicYoutubeBackground
                         videoId={"4UzZk6wCeQM"}
                         overlay={"rgba(0,0,0,0.8)"}

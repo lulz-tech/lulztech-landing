@@ -1,7 +1,6 @@
 import * as React from "react";
 
-import { AppTitle } from "../../components/app-title/app-title";
-import { Boi } from "../../components/boi/boi";
+import AppTitle from "../../components/app-title/app-title";
 
 interface IUncleFedorProps { }
 
@@ -11,10 +10,7 @@ export class UncleFedor extends React.Component<IUncleFedorProps, IUncleFedorSta
 
     public render() {
         return (
-            <>
-                <Boi defaultPic={undefined} />
-                <AppTitle title={"uncleFedor"} />
-            </>
+            <AppTitle title={"uncleFedor"} />
         );
     }
 }

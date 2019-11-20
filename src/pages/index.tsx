@@ -1,14 +1,19 @@
 import * as React from 'react'
 
 import { NextPage } from 'next'
-
-import { AppWrapper } from '../containers/AppWrapper/AppWrapper'
+import Head from 'next/head'
 
 import { Home } from '../containers/Home/Home'
 
 const IndexPage: NextPage = () => {
   return (
-    <Home />
+    <>
+      <Head>
+        <title>Lulz Tech: Лучший технологический стартап</title>
+      </Head>
+
+      <Home />
+    </>
   )
 }
 

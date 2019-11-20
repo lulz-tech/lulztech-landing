@@ -1,7 +1,6 @@
 import * as React from "react";
 
-import { AppTitle } from "../../components/app-title/app-title";
-import { Boi } from "../../components/boi/boi";
+import AppTitle from "../../components/app-title/app-title";
 
 interface IAlmProps { }
 
@@ -11,11 +10,7 @@ export class Alm extends React.Component<IAlmProps, IAlmState> {
 
     public render() {
         return (
-            <>
-                <Boi defaultPic={undefined} />
-
-                <AppTitle title="Alm" />
-            </>
+            <AppTitle title="Alm" />
         );
     }
 }

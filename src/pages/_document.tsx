@@ -23,7 +23,6 @@ export default class extends Document {
 
           <link rel="manifest" href="/manifest.json" />
           <link rel="shortcut icon" href="/favicon.ico" />
-          <title>Lulz Tech: Лучший технологический стартап</title>
           <meta name="description" content="Лучший стартап" />
 
           <script async src="https://www.googletagmanager.com/gtag/js?id=UA-137782215-1"></script>
