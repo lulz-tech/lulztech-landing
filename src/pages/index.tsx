@@ -1,9 +1,9 @@
-import * as React from 'react'
+import * as React from 'react';
 
-import { NextPage } from 'next'
-import Head from 'next/head'
+import { NextPage } from 'next';
+import Head from 'next/head';
 
-import { Home } from '../containers/Home/Home'
+import { Home } from '../containers/Home/Home';
 
 const IndexPage: NextPage = () => {
   return (
@@ -14,7 +14,7 @@ const IndexPage: NextPage = () => {
 
       <Home />
     </>
-  )
-}
+  );
+};
 
-export default IndexPage
+export default IndexPage;

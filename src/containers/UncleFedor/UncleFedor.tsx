@@ -8,9 +8,9 @@ interface IUncleFedorState { }
 
 export class UncleFedor extends React.Component<IUncleFedorProps, IUncleFedorState> {
 
-    public render() {
-        return (
-            <AppTitle title={"uncleFedor"} />
-        );
-    }
+  public render() {
+    return (
+      <AppTitle title={"uncleFedor"} />
+    );
+  }
 }

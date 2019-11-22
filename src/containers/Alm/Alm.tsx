@@ -8,9 +8,9 @@ interface IAlmState { }
 
 export class Alm extends React.Component<IAlmProps, IAlmState> {
 
-    public render() {
-        return (
-            <AppTitle title="Alm" />
-        );
-    }
+  public render() {
+    return (
+      <AppTitle title="Alm" />
+    );
+  }
 }

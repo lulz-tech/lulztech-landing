@@ -6,9 +6,9 @@ import "./NotFound.styles.scss";
 
 export class NotFound extends React.PureComponent {
 
-    public render() {
-        return (
-            <AppTitle title="Такой страницы нет 😵" />
-        );
-    }
+  public render() {
+    return (
+      <AppTitle title="Такой страницы нет 😵" />
+    );
+  }
 }

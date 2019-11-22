@@ -9,12 +9,12 @@ interface IHomeState { }
 
 export class Home extends React.Component<IHomeProps, IHomeState> {
 
-    public render() {
-        return (
-            <>
-                <AppTitle />
-                <AppIntro />
-            </>
-        );
-    }
+  public render() {
+    return (
+      <>
+        <AppTitle />
+        <AppIntro />
+      </>
+    );
+  }
 }

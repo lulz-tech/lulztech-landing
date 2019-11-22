@@ -1,15 +1,17 @@
+import * as React from 'react';
+
 import dynamic from "next/dynamic";
 
-const DynamicYoutubeBackground = dynamic(
+const DynamicYoutubeBackground = dynamic<any>(
   () => import("react-youtube-background"),
   {
-    loading: (props) => {
+    loading: () => {
       return (
         <div>...</div>
-      )
+      );
     },
     ssr: false,
   }
-)
+);
 
-export default DynamicYoutubeBackground as any;
+export default DynamicYoutubeBackground;
