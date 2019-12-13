@@ -5,16 +5,10 @@ import AppTitle from "../../components/app-title/app-title";
 
 interface IHomeProps { }
 
-interface IHomeState { }
+export const Home: React.FC<IHomeProps> = () => (
+  <div>
+    <AppTitle />
+    <AppIntro />
+  </div>
+);
 
-export class Home extends React.Component<IHomeProps, IHomeState> {
-
-  public render() {
-    return (
-      <>
-        <AppTitle />
-        <AppIntro />
-      </>
-    );
-  }
-}
