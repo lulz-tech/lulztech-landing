@@ -1,16 +1,16 @@
 version: "3.5"
 
 services:
-   lulztech-landing:
-      image: alm2/lulztech-landing
-      container_name: lulztech-landing
-      labels:
-         - "traefik.port=80"
-         - "traefik.backend=lulztech-landing"
-         - "traefik.frontend.rule=Host:lulztech.gq"
-         - "traefik.frontend.entryPoints=http,https"
+  lulztech-landing:
+    image: registry.ci.lulztech.ml/lulztech_landing
+    container_name: lulztech-landing
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.portainer.rule=Host(`lulztech.ml`)"
+      - "traefik.http.routers.portainer.tls.certresolver=mytlschallenge"
+      - "traefik.http.routers.portainer.entrypoints=websecure"
 
 networks:
-   default:
-      external:
-         name: traefik
+  default:
+    external:
+      name: traefik
