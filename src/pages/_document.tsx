@@ -28,7 +28,7 @@ export default class extends Document {
           <script async src="https://www.googletagmanager.com/gtag/js?id=UA-137782215-1"></script>
         </Head>
 
-        <body style={{ margin: 0, padding: 0 }}>
+        <body style={{ margin: 0, padding: 0, backgroundColor: '#000' }}>
           <Main />
           <NextScript />
         </body>
