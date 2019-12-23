@@ -1,7 +1,7 @@
-import * as React from "react";
+import * as React from 'react';
 
-import AppIntro from "../../components/app-intro/app-intro";
-import AppTitle from "../../components/app-title/app-title";
+import AppIntro from '../../components/app-intro/app-intro';
+import AppTitle from '../../components/app-title/app-title';
 
 interface IHomeProps { }
 

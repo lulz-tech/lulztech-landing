@@ -1,8 +1,8 @@
-import * as React from "react";
+import * as React from 'react';
 
-import AppTitle from "../..//components/app-title/app-title";
+import AppTitle from '../..//components/app-title/app-title';
 
-import "./NotFound.styles.scss";
+import './NotFound.styles.scss';
 
 export class NotFound extends React.PureComponent {
 

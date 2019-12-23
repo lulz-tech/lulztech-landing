@@ -1,11 +1,11 @@
-import * as React from "react";
+import * as React from 'react';
 
-import { randomBetween } from "../../utils/utils";
-import "./app-intro.styles.scss";
+import { randomBetween } from '../../utils/utils';
+import './app-intro.styles.scss';
 
-import aboutTexts from "./app-intro.texts";
+import aboutTexts from './app-intro.texts';
 
-const DEFAULT_LINK_HREF = "https://github.com/lulz-tech/";
+const DEFAULT_LINK_HREF = 'https://github.com/lulz-tech/';
 const DEFAULT_LINK_TEXT = 'Тыц';
 
 type Link = {
@@ -23,7 +23,7 @@ const AppIntro: React.FC<AppIntroProps> = ({ description, link = {} }: AppIntroP
   const aboutText = description || aboutTexts[randomBetween(0, aboutTexts.length)];
   const linkUrl = link.href || DEFAULT_LINK_HREF;
   const linkTitle = link.title || DEFAULT_LINK_TEXT;
-  const linkTarget = link.target || "__blank";
+  const linkTarget = link.target || '__blank';
 
   return (
     <div className="App-intro">

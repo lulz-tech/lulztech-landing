@@ -1,6 +1,6 @@
-import * as React from "react";
+import * as React from 'react';
 
-import AppTitle from "../../components/app-title/app-title";
+import AppTitle from '../../components/app-title/app-title';
 
 interface IAlmProps { }
 

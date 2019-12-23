@@ -23,9 +23,7 @@ export default class extends Document {
 
           <link rel="manifest" href="/manifest.json" />
           <link rel="shortcut icon" href="/favicon.ico" />
-          <meta name="description" content="Лучший стартап" />
-
-          <script async src="https://www.googletagmanager.com/gtag/js?id=UA-137782215-1"></script>
+          <meta name="description" content="Лучший стартап, покажи его своей маме" />
         </Head>
 
         <body style={{ margin: 0, padding: 0, backgroundColor: '#000' }}>

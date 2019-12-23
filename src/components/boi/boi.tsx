@@ -1,20 +1,20 @@
-import * as React from "react";
+import * as React from 'react';
 
-import boi from "../../assets/images/boiiiii.png";
-import cat from "../../assets/images/cat.png";
-import house from "../../assets/images/house.png";
-import man from "../../assets/images/man.png";
-import minecraft from "../../assets/images/minecraft.png";
+import boi from '../../assets/images/boiiiii.png';
+import cat from '../../assets/images/cat.png';
+import house from '../../assets/images/house.png';
+import man from '../../assets/images/man.png';
+import minecraft from '../../assets/images/minecraft.png';
 
-import { randomBetween } from "../../utils/utils";
+import { randomBetween } from '../../utils/utils';
 
-import "./boi.styles.scss";
+import './boi.styles.scss';
 
 enum Pic {
-    cat = "cat",
-    house = "house",
-    man = "man",
-    minecraft = "minecraft"
+    cat = 'cat',
+    house = 'house',
+    man = 'man',
+    minecraft = 'minecraft'
 }
 
 const pics: Array<{ picName: Pic; pic: string }> = [

@@ -1,6 +1,6 @@
-import * as React from "react";
+import * as React from 'react';
 
-import "./app-title.styles.scss";
+import './app-title.styles.scss';
 
 interface IAppTitleProps {
   title?: string;
@@ -8,7 +8,7 @@ interface IAppTitleProps {
 
 const AppTitle: React.FC<IAppTitleProps> = ({ title }: IAppTitleProps) => (
   <header className="App-header">
-    <h1 className="App-title">{title || "💦 Lulz tech 💦"}</h1>
+    <h1 className="App-title">{title || '💦 Lulz tech 💦'}</h1>
   </header>
 );
 

@@ -1,6 +1,6 @@
-import * as React from "react";
+import * as React from 'react';
 
-import AppTitle from "../../components/app-title/app-title";
+import AppTitle from '../../components/app-title/app-title';
 
 interface IUncleFedorProps { }
 
@@ -10,7 +10,7 @@ export class UncleFedor extends React.Component<IUncleFedorProps, IUncleFedorSta
 
   public render() {
     return (
-      <AppTitle title={"uncleFedor"} />
+      <AppTitle title={'uncleFedor'} />
     );
   }
 }
