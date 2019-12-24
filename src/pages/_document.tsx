@@ -3,16 +3,6 @@ import Document, { Html, Head, Main, NextScript } from 'next/document';
 
 export default class extends Document {
 
-  componentDidMount() {
-    (window as any).dataLayer = (window as any).dataLayer || [];
-
-    function gtag(firstArg: string, secondArg: any) { ((window as any).dataLayer as any).push(arguments); }
-
-    gtag('js', new Date());
-
-    gtag('config', 'UA-137782215-1');
-  }
-
   render() {
     return (
       <Html lang="en">
