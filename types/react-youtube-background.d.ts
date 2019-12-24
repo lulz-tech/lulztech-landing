@@ -1,4 +1,4 @@
-declare module "react-youtube-background" {
+declare module 'react-youtube-background' {
   export type YoutubeBackgroundProps = {
     videoId?: string;
     overlay?: string;
